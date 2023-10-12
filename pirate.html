@@ -22,48 +22,123 @@
 
   <div class="bg-grey p-2 text-dark" id="locations">Number of locations checked is zero</div>
   <div class="bg-grey p-2 bg-opacity-20" id="penalty">Penalty is zero.</div>
-  <div class="bg-white p-2 bg-opacity-30">Click for help.</div>
+  <div class="bg-white p-2 bg-opacity-30" on click="help()">Click for help.</div>
   <div class="bg-grey p-2 text-dark" id="help"> Help report.</div>
 </div>
 
 <div class="container">
     <div class="image-container">
     <div class="row">
-      <div class="col-1"><img src="first.jpg" alt="Position 1"  id="loc1"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 2"  id="loc2"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 3"  id="loc3"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 4"  id="loc4"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 5"  id="loc5"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 1"  id="0" onclick="check(0)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 2"  id="1" onclick="check(1)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 3"  id="2" onclick="check(2)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 4"  id="3" onclick="check(3)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 5"  id="4" onclick="check(4)"></div>
     </div>
     <div class="row">
-      <div class="col-1"><img src="first.jpg" alt="Position 1"  id="loc6"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 2"  id="loc7"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 3"  id="loc8"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 4"  id="loc9"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 5"  id="loc10"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 1"  id="5" onclick="check(5)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 2"  id="6" onclick="check(6)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 3"  id="7" onclick="check(7)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 4"  id="8" onclick="check(8)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 5"  id="9" onclick="check(9)"></div>
       </div>
     <div class="row">
-      <div class="col-1"><img src="first.jpg" alt="Position 1"  id="loc11"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 2"  id="loc12"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 3"  id="loc13"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 4"  id="loc14"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 5"  id="loc15"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 1"  id="10" onclick="check(10)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 2"  id="11" onclick="check(11)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 3"  id="12" onclick="check(12)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 4"  id="13" onclick="check(13)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 5"  id="14" onclick="check(14)"></div>
     </div>
     <div class="row">
-      <div class="col-1"><img src="first.jpg" alt="Position 1"  id="loc16"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 2"  id="loc17"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 3"  id="loc18"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 4"  id="loc19"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 5"  id="loc20"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 1"  id="15" onclick="check(15)" ></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 2"  id="16" onclick="check(16)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 3"  id="17" onclick="check(17)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 4"  id="18" onclick="check(18)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 5"  id="19" onclick="check(19)"></div>
       </div>
     <div class="row row-cols-auto">
-      <div class="col-1"><img src="first.jpg" alt="Position 1"  id="loc21"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 2"  id="loc22"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 3"  id="loc23"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 4"  id="loc24"></div>
-      <div class="col-1"><img src="first.jpg" alt="Position 5"  id="loc25"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 1"  id="20" onclick="check(20)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 2"  id="21" onclick="check(21)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 3"  id="22" onclick="check(22)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 4"  id="23" onclick="check(23)"></div>
+      <div class="col-1"><img src="first.jpg" alt="Position 5"  id="24" onclick="check(24)"></div>
     </div>
     </div>
     </div>
+    
+  <script>
+      var ids = [ "loc0" ,"loc1" ,"loc2" ,"loc3" ,"loc4" ,
+                  "loc5" ,"loc6" ,"loc7" ,"loc8" ,"loc9" , 
+                  "loc10","loc11","loc12","loc13","loc14", 
+                  "loc15","loc16","loc17","loc18","loc19", 
+                  "loc20","loc21","loc22","loc23","loc24"];
+      var checkCount = 0;
+      var penalty = 0;
+      var lastCheck = 0;
+      var treasureLocation = 5;
+      var trapLocation = 18;
+      var gameOver = false;
+  
+      function check(position) {
+  
+          if (gameOver) {
+              return;
+          }
+          var id = ids[position];
+          var img = document.getElementById(id);
+  
+          if (position == treasureLocation) {
+              img.src = "treasure.jpg";
+              gameOver = true;
+              penalty = penalty - 3;
+          }
+          else if (position == trapLocation) {
+              img.src = "trap.jpg";
+              gameOver = true;
+              penalty = penalty + 4;
+          }
+          else {
+              img.src = "first.jpg";
+          }
+  
+          checkCount++;
+          penalty++;
+          var id_location = document.getElementById("locations");
+          id_penalty = document.getElementById("penalty");
+          id_location.innerHTML = `Number of locations checked is  ${checkCount}`;
+          id_penalty.innerHTML = `Penalty is ${penalty}`;
+          lastCheck = position;
+      }
+  
+      function help() {
+  
+          console.log("triggered");
+          let col = treasureLocation % 5;
+          let row = Math.floor((treasureLocation) / 5);
+          let col1 = lastCheck % 5;
+          let row1 = Math.floor((lastCheck) / 5);
+  
+          let rowDiff = Math.abs(row - row1);
+          let colDiff = Math.abs(col - col1);
+  
+          if ((rowDiff === 1 && colDiff === 0) || (rowDiff === 0 && colDiff === 1)) {
+              console.log("can smell it");
+              document.getElementById("help").textContent = 'Can smell it';
+          }
+          else if (rowDiff + colDiff === 2) {
+              console.log("close matie");
+              document.getElementById("help").textContent = 'Close Matie';
+          }
+          else {
+              console.log("step faster");
+              document.getElementById("help").textContent = 'Step Faster';
+          }
+          penalty += 2;
+          id_penalty.innerHTML = `Penalty is ${penalty}`;
+      }
+  
+      
+  </script>  
+
 </body>
 </html>
